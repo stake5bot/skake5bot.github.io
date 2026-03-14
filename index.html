@@ -4750,6 +4750,40 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     /* Footer icon SVGs */
     [data-theme="light"] footer svg { stroke: currentColor !important; }
 
+    /* ============================================================
+       ФУТЕР — мобільна оптимізація
+    ============================================================ */
+    @media (max-width: 768px) {
+      footer .grid.md\:grid-cols-2.lg\:grid-cols-4 {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 24px !important;
+      }
+      footer .lg\:col-span-1 {
+        grid-column: span 2 !important;
+      }
+      footer .container.mx-auto.px-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      footer .py-16 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+      }
+      footer .mb-12 {
+        margin-bottom: 1.5rem !important;
+      }
+      footer .gap-12 {
+        gap: 1.5rem !important;
+      }
+      footer .text-3xl {
+        font-size: 1.4rem !important;
+      }
+      footer ul.space-y-3 > li {
+        margin-top: 0.4rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+    }
+
     /* "30 днів" та інші жовті таблетки */
     [data-theme="light"] .bg-\[rgb\(218\,255\,1\)\] {
       background-color: rgb(80,110,0) !important;
@@ -4856,7 +4890,27 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     /* Підзаголовок острівця */
     [data-theme="light"] #how-island .text-\[rgb\(218\,255\,1\)\] { color: rgb(55,85,0) !important; }
 
-  </style>
+  
+    /* Мобільне меню — світла тема */
+    [data-theme="light"] #mobile-menu {
+      background: rgba(232,234,237,0.99) !important;
+      border-bottom-color: rgba(0,0,0,0.1) !important;
+    }
+    [data-theme="light"] #mobile-menu a {
+      color: #1a1a2e !important;
+    }
+    [data-theme="light"] #mobile-menu a:hover {
+      color: rgb(55,85,0) !important;
+      background: rgba(55,85,0,0.08) !important;
+    }
+    [data-theme="light"] #mobile-menu div[style*="border-top"] {
+      border-top-color: rgba(0,0,0,0.1) !important;
+    }
+    [data-theme="light"] #mobile-theme-btn {
+      border-color: rgba(0,0,0,0.15) !important;
+      color: #1a1a2e !important;
+    }
+</style>
   <meta name="theme-color" content="#111113">
   <meta name="color-scheme" content="dark">
   <meta name="description" content="STAKE DROP — професійний мульти-додаток для автоматизації заробітку на STAKE RP. Рибалка, качалка, кар'єр, лісоруб.">
@@ -4915,9 +4969,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
               <div
-                class="inline-flex items-center gap-2 px-4 py-2 bg-[rgb(26,28,30)] border border-[rgba(218,255,1,0.3)] rounded-full mb-8 animate-fade-in" style="max-width:calc(100vw - 48px);box-sizing:border-box;">
+                class="inline-flex items-center gap-2 px-3 py-2 bg-[rgb(26,28,30)] border border-[rgba(218,255,1,0.3)] rounded-full mb-8 animate-fade-in" style="max-width:calc(100vw - 32px);box-sizing:border-box;overflow:hidden;">
                 <div class="w-2 h-2 bg-[rgb(218,255,1)] rounded-full animate-pulse"></div><span
-                  style="font-size:clamp(9px,2.5vw,14px);white-space:normal;text-align:center;" class="font-medium text-[rgb(218,255,1)]">Офіційний бот для STAKE RP</span>
+                  style="font-size:clamp(10px,3vw,14px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" class="font-medium text-[rgb(218,255,1)]">Офіційний бот для STAKE RP</span>
               </div>
               <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in"><span
                   class="text-white">Автоматизація</span><br><span class="text-[rgb(218,255,1)]">GTA 5 RP</span><span class="text-white"> заробітку</span></h1>
@@ -4932,7 +4986,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" x2="12" y1="15" y2="3"></line>
                   </svg>Завантажити безкоштовно</button><button
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow-sm py-2 bg-transparent text-white border-2 border-[rgb(63,63,63)] hover:border-[rgb(218,255,1)] hover:text-[rgb(218,255,1)] hover:bg-[rgba(218,255,1,0.1)] font-semibold px-8 h-14 text-lg rounded-xl transition-all duration-200 hover:-translate-y-1" data-action="buy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow-sm py-2 bg-transparent text-white border-2 border-[rgb(63,63,63)] hover:border-[rgb(218,255,1)] hover:text-[rgb(218,255,1)] hover:bg-[rgba(218,255,1,0.1)] font-semibold px-8 h-14 text-lg rounded-xl transition-all duration-200 hover:-translate-y-1" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth',block:'start'})"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" class="lucide lucide-shopping-cart w-5 h-5 mr-2" aria-hidden="true">
                     <circle cx="8" cy="21" r="1"></circle>
@@ -6237,11 +6291,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     Інструкція користування
                   </a>
-                  <a href="https://t.me/Farm_StakeRP_Bot" target="_blank" class="faq-link-btn" id="faq-telegram-btn">
+                  <a href="https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg" target="_blank" class="faq-link-btn" id="faq-telegram-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                     Написати в підтримку
                   </a>
-                  <a href="https://t.me/Farm_StakeRP_Bot" target="_blank" class="faq-link-btn" id="faq-discord-btn">
+                  <a href="https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg" target="_blank" class="faq-link-btn" id="faq-discord-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     Discord спільнота
                   </a>
@@ -6270,7 +6324,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
                     Завантажити (Windows)
                   </a>
-                  <a href="https://t.me/Farm_StakeRP_Bot" target="_blank" id="dl-buy-btn"
+                  <a href="#pricing" onclick="event.preventDefault();document.getElementById('pricing').scrollIntoView({behavior:'smooth',block:'start'})" id="dl-buy-btn"
                     class="inline-flex items-center justify-center gap-2 shadow-sm bg-transparent text-white border-2 border-[rgb(218,255,1)] hover:bg-[rgba(218,255,1,0.1)] font-semibold px-10 h-14 text-lg rounded-xl transition-all duration-200 hover:-translate-y-1 min-w-[240px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
                     Купити ключ
@@ -6377,7 +6431,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 <li><a href="#"
                     class="text-[rgb(161,161,170)] hover:text-[rgb(218,255,1)] transition-colors duration-200 text-sm"
                     target="_blank" rel="noopener noreferrer" id="footer-discord-link">Discord сервер</a></li>
-                <li><a href="https://t.me/Farm_StakeRP_Bot" target="_blank" id="footer-telegram-link"
+                <li><a href="https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg" target="_blank" id="footer-telegram-link"
                     class="text-[rgb(161,161,170)] hover:text-[rgb(218,255,1)] transition-colors duration-200 text-sm"
                     target="_blank" rel="noopener noreferrer">Telegram канал</a></li>
                 <li><a href="#instructions"
@@ -6444,13 +6498,13 @@ document.addEventListener("DOMContentLoaded", function () {
   ============================================================ */
   var SITE_CONFIG = {
     downloadUrl:    "https://github.com/stake5bot/stake5bot.github.io/releases/download/v4.12/StakeDrop.exe",
-    buyUrl:         "https://t.me/Farm_StakeRP_Bot",       // загальне посилання
-    buyProMonthly:  "https://t.me/Farm_StakeRP_Bot",       // PRO місяць
-    buyProYearly:   "https://t.me/Farm_StakeRP_Bot",       // PRO рік
-    buyBasicMonthly:"https://t.me/Farm_StakeRP_Bot",       // Basic місяць
-    buyBasicYearly: "https://t.me/Farm_StakeRP_Bot",       // Basic рік
-    telegramUrl:    "https://t.me/Farm_StakeRP_Bot",
-    discordUrl:     "https://t.me/Farm_StakeRP_Bot",
+    buyUrl:         "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",       // загальне посилання
+    buyProMonthly:  "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",       // PRO місяць
+    buyProYearly:   "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",       // PRO рік
+    buyBasicMonthly:"https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",       // Basic місяць
+    buyBasicYearly: "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",       // Basic рік
+    telegramUrl:    "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",
+    discordUrl:     "https://images.meme-arsenal.com/d5c9dd74ae3b8214b1e19a2959250398.jpg",
     appVersion:     "v4.12",
     updateDate:     "06.03.2026",
   };
@@ -6476,7 +6530,10 @@ document.addEventListener("DOMContentLoaded", function () {
   ============================================================ */
   function scrollToSection(href) {
     var target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (target) {
+      var offset = target.getBoundingClientRect().top + window.pageYOffset - 88;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
   }
 
   /* ============================================================
@@ -6658,6 +6715,95 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach(function(s){ observer.observe(s); });
 
   /* ============================================================
+     МОБІЛЬНЕ МЕНЮ + КНОПКА ТЕМИ
+  ============================================================ */
+  var menuBtn = document.querySelector('button.md\\:hidden');
+  if (menuBtn) {
+    var mobileMenu = document.createElement('div');
+    mobileMenu.id = 'mobile-menu';
+    mobileMenu.style.cssText = [
+      'display:none',
+      'position:fixed',
+      'top:80px',
+      'left:0',
+      'right:0',
+      'background:rgba(17,17,19,0.98)',
+      'backdrop-filter:blur(12px)',
+      '-webkit-backdrop-filter:blur(12px)',
+      'border-bottom:1px solid rgba(255,255,255,0.1)',
+      'z-index:49',
+      'padding:16px 24px 24px',
+      'flex-direction:column',
+      'gap:4px'
+    ].join(';');
+
+    var links = [
+      { href: '#bots', text: 'Боти' },
+      { href: '#features', text: 'Можливості' },
+      { href: '#pricing', text: 'Тарифи' },
+      { href: '#instructions', text: 'Інструкції' },
+      { href: '#download', text: 'Завантажити' }
+    ];
+
+    links.forEach(function(link) {
+      var a = document.createElement('a');
+      a.href = link.href;
+      a.textContent = link.text;
+      a.style.cssText = 'color:rgb(218,218,218);text-decoration:none;font-size:16px;font-weight:500;padding:12px 16px;border-radius:10px;transition:all 0.2s ease;display:block;';
+      a.addEventListener('touchstart', function() { this.style.color='rgb(218,255,1)'; this.style.background='rgba(218,255,1,0.08)'; });
+      a.addEventListener('mouseover', function() { this.style.color='rgb(218,255,1)'; this.style.background='rgba(218,255,1,0.08)'; });
+      a.addEventListener('mouseout', function() { this.style.color='rgb(218,218,218)'; this.style.background='transparent'; });
+      a.addEventListener('click', function() {
+        closeMobileMenu();
+        var target = document.querySelector(link.href);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      mobileMenu.appendChild(a);
+    });
+
+    // Кнопка зміни теми в мобільному меню
+    var themeDiv = document.createElement('div');
+    themeDiv.style.cssText = 'border-top:1px solid rgba(255,255,255,0.1);margin-top:8px;padding-top:12px;';
+    var mobileThemeBtn = document.createElement('button');
+    mobileThemeBtn.id = 'mobile-theme-btn';
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    mobileThemeBtn.style.cssText = 'width:100%;padding:12px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);background:transparent;cursor:pointer;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;color:rgb(218,218,218);transition:all 0.2s;';
+    mobileThemeBtn.innerHTML = (isLight ? '🌙' : '☀️') + '<span>' + (isLight ? 'Темна тема' : 'Світла тема') + '</span>';
+    mobileThemeBtn.addEventListener('click', function() {
+      var cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+      // Оновлюємо текст кнопки
+      mobileThemeBtn.innerHTML = (next === 'light' ? '🌙' : '☀️') + '<span>' + (next === 'light' ? 'Темна тема' : 'Світла тема') + '</span>';
+      closeMobileMenu();
+    });
+    themeDiv.appendChild(mobileThemeBtn);
+    mobileMenu.appendChild(themeDiv);
+
+    var header = document.querySelector('header');
+    if (header && header.parentNode) header.parentNode.insertBefore(mobileMenu, header.nextSibling);
+
+    var isMenuOpen = false;
+    function closeMobileMenu() {
+      isMenuOpen = false;
+      mobileMenu.style.display = 'none';
+      menuBtn.classList.remove('open');
+    }
+
+    menuBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      isMenuOpen = !isMenuOpen;
+      mobileMenu.style.display = isMenuOpen ? 'flex' : 'none';
+      menuBtn.classList.toggle('open', isMenuOpen);
+    });
+
+    document.addEventListener('click', function(e) {
+      if (isMenuOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) closeMobileMenu();
+    });
+  }
+
+  /* ============================================================
      SCROLL TO TOP
   ============================================================ */
   var scrollBtn = document.getElementById('scroll-top-btn');
@@ -6736,14 +6882,17 @@ function applyTheme(theme) {
   var iconDark  = document.getElementById('theme-icon-dark');
   var iconLight = document.getElementById('theme-icon-light');
   var btn = document.getElementById('theme-toggle');
+  var mobileBtn = document.getElementById('mobile-theme-btn');
   if (theme === 'light') {
     if (iconDark)  iconDark.style.display  = 'none';
     if (iconLight) iconLight.style.display = '';
     if (btn) { btn.style.borderColor = 'rgba(0,0,0,0.15)'; btn.style.background = 'rgba(0,0,0,0.06)'; btn.style.color = '#0d0d0f'; }
+    if (mobileBtn) mobileBtn.innerHTML = '🌙<span>Темна тема</span>';
   } else {
     if (iconDark)  iconDark.style.display  = '';
     if (iconLight) iconLight.style.display = 'none';
     if (btn) { btn.style.borderColor = 'rgba(255,255,255,0.15)'; btn.style.background = 'rgba(255,255,255,0.06)'; btn.style.color = 'white'; }
+    if (mobileBtn) mobileBtn.innerHTML = '☀️<span>Світла тема</span>';
   }
 }
 
@@ -6761,11 +6910,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
-
-
-
-
-
-
-
-
